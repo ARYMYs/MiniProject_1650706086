@@ -1,0 +1,133 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar {
+    padding: 1rem 1rem;
+}
+
+.custom-navbar {
+    background-color: #000000;
+    border-bottom: 2px solid #00FFFF;
+    color: #00FFFF;
+    transition: color 0.3s; 
+}
+
+.navbar-icon {
+    height: 40px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+#navbarToggleExternalContent {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 15px #00FFFF, 0 0 30px #FF00FF; 
+}
+
+.text.btn {
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    color: #00FFFF;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.text.btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00FFFF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.text.btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.text.btn:hover {
+    color: #FF00FF;
+}
+
+.btn-primary {
+    background-color: #4A0074;
+    border: 2px solid #00FFFF;
+    color: #00FFFF;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+}
+
+.btn-primary:hover {
+    background-color: #00FFFF;
+    color: #000000;
+    border-color: #4A0074;
+    box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+}
+
+.card-body h3, .form-label, .form-check-label, .card-body h6{
+    color: #00FFFF;
+}
+
+.form-control {
+    background-color: #000000;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #FF00FF;
+    box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+}
+
+.form-check-input {
+    accent-color: #00FFFF;
+}
+
+.card-registration {
+    background-color: #1a1a1a; 
+    border: 2px solid #00FFFF; 
+    box-shadow: 0 0 15px #00FFFF; 
+}
+
+.card-body {
+    background-color: #000000;
+}
+
+.card-registration .btn-warning {
+    background-color: #FF00FF;
+    border: 2px solid #00FFFF;
+    color: #00FFFF;
+    box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+}
+
+.card-registration .btn-warning:hover {
+    background-color: #00FFFF;
+    color: #FF00FF;
+    box-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF;
+}
+
+.card-registration .btn-light {
+    background-color: #4A0074;
+    border: 2px solid #00FFFF;
+    color: #00FFFF;
+    box-shadow: 0 0 10px #4A0074, 0 0 20px #4A0074;
+}
+
+.custom-img img{
+    height: 725px !important;
+}

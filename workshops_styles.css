@@ -1,0 +1,134 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar {
+    padding: 1rem 1rem;
+}
+
+.custom-navbar {
+    background-color: #000000;
+    border-bottom: 2px solid #00FFFF;
+    color: #00FFFF;
+    transition: color 0.3s;
+}
+
+.navbar-icon {
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+#navbarToggleExternalContent {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 15px #00FFFF, 0 0 30px #FF00FF;
+}
+
+.text.btn {
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    color: #00FFFF;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.text.btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00FFFF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.text.btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.text.btn:hover {
+    color: #FF00FF;
+}
+
+.btn-primary {
+    background-color: #4A0074;
+    border: 2px solid #00FFFF;
+    color: #00FFFF;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+}
+
+.btn-primary:hover {
+    background-color: #00FFFF;
+    color: #000000;
+    border-color: #4A0074;
+    box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+}
+
+.hero{
+    background-image: url(/images/workshop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-table {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  }
+  
+  .custom-table thead {
+    background-color: #000000;
+    color: #00ff00;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .custom-table tbody {
+    border-top: 3px solid #00ff00;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #00ff00;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .custom-table td {
+    padding-top: 20px;
+  }  
+
+  @media (max-width: 768px) {
+    .table {
+      max-width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .section-title {
+    margin: 50px 0;
+    text-align: center;
+    padding-left: 20px;
+  }
