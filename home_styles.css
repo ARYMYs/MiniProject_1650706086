@@ -76,7 +76,7 @@
 }
 
 .home-hero {
-    background-image: url("/images/hero.gif");
+    background-image: url("images/hero.gif");
     background-size: cover;
     background-position: center;
     height: 100vh;
